@@ -1,0 +1,16 @@
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/cabessada/ChatGPT.git
+git push -u origin main
+
+
+
+git init
+git add .
+git config --global user.name "cabessada"
+git config --global user.email "tcdanny@live.com.pt"
+git commit -m "Envio 1a estrutura"
+git remote add origin https://github.com/cabessada/ChatGPT.git
+git push -u origin main

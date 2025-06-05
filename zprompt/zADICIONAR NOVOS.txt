@@ -1,0 +1,7 @@
+git init
+git add .
+git commit -m "Mensagem do commit"
+git remote add origin https://github.com/cabessada/ChatGPT.git
+git push -u origin main
+
+

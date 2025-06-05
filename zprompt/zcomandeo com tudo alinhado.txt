@@ -1,0 +1,6 @@
+git init
+git remote add origin https://github.com/cabessada/ChatGPT.git
+git checkout -b main
+git add .
+git commit -m "Commit inicial"
+git push -u origin main

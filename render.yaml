@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: chatgpt-github-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: API_AUTH_TOKEN
+        fromEnvVar: API_AUTH_TOKEN
+      - key: GITHUB_TOKEN
+        fromEnvVar: GITHUB_TOKEN
+      - key: OPENAI_API_KEY
+        fromEnvVar: OPENAI_API_KEY
+      - key: GIT_USER
+        fromEnvVar: GIT_USER
+      - key: GIT_EMAIL
+        fromEnvVar: GIT_EMAIL
+      - key: REPO_PATH
+        value: .
